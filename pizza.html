@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            color: #d35400;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pizza Delight</h1>
+        <img src="pizza.jpeg" alt="Delious pizza">
+        <h3>A twist on pizza, this 20-minute meal is naan bread topped with a lightly spiced chicken tikka mixture and broiled to
+        perfection! I love Indian flavors a lot, a lot, and this twist on pizza with the simplified flavors of chicken tikka
+        warms my soul.</h3>
+        <h2>chicken tikka pizza</h2>
+        <button>ORDER NOW</button>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Pizza Order App</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    text-align: center;
+                }
+        
+                .container {
+                    max-width: 400px;
+                    margin: auto;
+                    padding: 20px;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                }
+        
+                select,
+                button {
+                    width: 100%;
+                    padding: 10px;
+                    margin-top: 10px;
+                }
+            </style>
+        </head>
+        
+        <body>
+            <div class="container">
+                <h2>Pizza Order</h2>
+                <label for="size">Choose Size:</label>
+                <select id="size">
+                    <option value="600">Small - Rs 600</option>
+                    <option value="1200">Medium - RS 1200 </option>
+                    <option value="1800">Large - Rs 1800  </option>
+                </select>
+        
+                <label for="topping">Choose Topping:</label>
+                <select id="topping">
+                    <option value="200"> chicken tikka pizza - Rs 200</option>
+                    <option value="300"> kabbab pizza   -  Rs 300</option>
+                    <option value="450">  pizza with every topping- Rs 450</option>
+                </select>
+        
+                <button onclick="calculateTotal()">Calculate Total</button>
+                <h3>Total Price: Rs<span id="total">0</span></h3>
+            </div>
+        
+            <script>
+                function calculateTotal() {
+                    let sizePrice = parseInt(document.getElementById("size").value);
+                    let toppingPrice = parseInt(document.getElementById("topping").value);
+                    let total = sizePrice + toppingPrice;
+                    document.getElementById("total").innerText = total; 
+                }
+            </script>
+        </body>
+        
+        </html>
+        
+    </div>
+</body>
+
+</html>
+ 
+
